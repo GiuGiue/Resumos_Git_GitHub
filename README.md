@@ -14,10 +14,6 @@ Repositório com a finalidade de armazenar resumos realcionados ao versionamento
 |-----------|-----------|------------|------------|---------|
 |```cd ..```|```mkdir Nome_Do_Diretório```|```touch .gitignore```|```cd Nome_Do_Diretório```|```git status```|
 
-|A|B|
-|-|-|
-|L|S|
-
 - Mostrar status
 Esse comando pode ser utilizado para verificar o status do commit na pasta, da árvore de trabalho e área de preparação. A área de preparação (ou index) é onde será preparado os arquivos que serão salvos em um commit. 
 - Ignorar diretório
