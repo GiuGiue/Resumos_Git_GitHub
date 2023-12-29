@@ -9,9 +9,14 @@ Repositório com a finalidade de armazenar resumos realcionados ao versionamento
 
 ## Comandos Git Bash
 - **Comandos importantes para manipular diretórios**
+
 |Voltar para a pasta anterior|Criar diretório (pasta)|Ignorar diretório|Entrar no diretório|Mostrar status|
 |-----------|-----------|------------|------------|---------|
 |```cd ..```|```mkdir Nome_Do_Diretório```|```touch .gitignore```|```cd Nome_Do_Diretório```|```git status```|
+
+|A|B|
+|-|-|
+|L|S|
 
 - Mostrar status
 Esse comando pode ser utilizado para verificar o status do commit na pasta, da árvore de trabalho e área de preparação. A área de preparação (ou index) é onde será preparado os arquivos que serão salvos em um commit. 
