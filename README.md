@@ -132,14 +132,17 @@ A diferença que a última opção abrirá uma janela nova para edição. Aperte
 No ```git reset``` pode ser adicionado ```--soft```, ```--mixed``` ou ```--hard```.
 
 1. Soft 
+
 Este tem a função de retornar para o staged. Isso significa que retornando para esse estado a única coisa que falta é commitar e enviar para a branch.
 É necessário adicionar depois do comando o hash do commit anterior do que deseja retornar, que pode ser acessado pelo ```git log```. 
 
-2. Mixed 
+2. Mixed
+
 O ```--mixed``` retorna para o unstaged. Então para dar proseguimento é preciso fazer o git add e depois commitar.
 Para utilizá-lo basta fazer o mesmo do soft, colocando o hash do commit após o comando.
 
 3. Hard 
+
 Nesse caso ele vai além do staged e unstaged, descartando totalmente o(s) arquivo(s) do commit indicado. Ele segue o mesmo processo de utilização instruído anteriormente. 
 
 
