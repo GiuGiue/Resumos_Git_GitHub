@@ -6,7 +6,7 @@ Construi esse README com a finalidade de armazenar resumos realcionados ao versi
 - [Documentação Git](https://git-scm.com/docs/git/pt_BR)
 - [Documentação GitHub](https://docs.github.com/pt)
 
-### Como configurar o Git Bash
+## Como configurar o Git Bash
 
 Para baixar o git no Windows basta ir no site [Git for Windows](https://gitforwindows.org), que é um projeto de uma comunidade que visa facilitar o processo de instalação do Git para os usuários do Windows, encontrar e reparar bugs na versão do Git do Windows. Baixando por esse site, no processo de instalação basta clicar em "Next" em todas as etapas.
 
@@ -21,7 +21,7 @@ O Git deve ser configurado para que tudo funcione perfeitamente. Deve ser criado
 
 PRONTO! Agora seu Git Bash está ligado a sua conta do GitHub!
 
-## Comandos básicos para manipular diretórios pelo cmd
+### Comandos básicos para manipular diretórios pelo cmd
 
 |Voltar para a pasta anterior|Criar diretório (pasta)|Entrar no diretório|
 |-----------|-----------|------------|
@@ -37,7 +37,7 @@ Nota-se que tudo que envolve em entrar em diretórios é usado anteriormente o c
 *Por que é importante saber esses comandos?*
 Para criar repositórios, e na realização de suas atualizações, é muito importante ficar atento em qual diretório você está, se não pode ocorrer alguns problemas.
 
-## Comandos do git importantes para diretórios
+### Comandos do git importantes para diretórios
 
 |Mostrar status|Ignorar diretório|
 |-----------|-----------|
@@ -48,6 +48,7 @@ Esse comando pode ser utilizado para verificar o status do commit na pasta, da �
 - Ignorar diretório: ```touch .gitignore```
 Esse comando irá criar um arquivo .gitignore, por isso é importante está dentro do diretório desejado. O diretório será ignorado e não será passado para o repositório.
 
+## Mexendo no Git
 ### Criando um repositório local
 1. Novo repositório
 Esse comando irá criar um novo repositório, dessa forma irá criar um subdiretório .git . O que permite a criação de uma ramificação principal
@@ -67,7 +68,7 @@ O texto feito no editor do [Readme so](readme.so) pode ser colado no arquivo .md
 git add README.md
 ```
 
-Observe que "README.md" é o nome do arquivo Markdown. Então você irá colocar o nome de acordo com o arquivo. Nestes exemplos está sendo criado um readme.
+Observe que "README.md" é o nome do arquivo Markdown. Então você irá colocar o nome de acordo com o arquivo. Nestes exemplos está sendo criado um readme como nome padrão.
 
 O arquivo foi adicionado, e o status pode ser verificado novamente pelo comando ```git status``` como mostrado anteriormente.
 
@@ -87,8 +88,7 @@ git log
 ```
 Se o status for verificado novamente mostrará que a árvore de trabalho está limpa. Lembrando que o status da pasta não é reconhecido se estiver vazio, assim será mostrado que não há nada na árvore de trabalho.
 
-### Subir repositório local para o repositório remoto
-Depois de realizar o commit, esse processo pode ser realizado.
+## Subir repositório local pronto para o repositório remoto
 
 1. Adicionando a URL do repositório remoto
 ```
@@ -106,14 +106,14 @@ git add .
 ```
 
 ### Clonando um repositório
-Com o link do repositório do GitHub, no terminal coloque o comando:
+Todo processo de colocar comandos envolve o caminho correto do diretório. Então para essa estapa faça uma nova pasta e clique com o botão direito do mouse dentro da pasta e selecione a opção "Open the Git Bash Here", irá abrir o terminal do Git com o caminho do diretório criado. Com o link do repositório desejado do GitHub, no terminal coloque o comando:
 ```
 git clone https://github.com/GiuGiue/test.git
 ```
-Acrescente o link do repositório desejado após o comando. Este é um link fctício. Para alterar o nome basta escrever o nome que deseja após a URL. 
+Acrescente o link do repositório desejado após o comando. Este é um link fctício, substitua pelo link de um repositório existente. 
 
-### Subindo alterações dos arquivos
-É possível observar que esse processo é muito semelhante aos outros. A diferença que será excluída as etapas de criação de arquivos e diretórios, ligação entre o repositório local e remoto.
+## Subindo atualizações dos arquivos
+É possível observar que esse processo é muito semelhante aos outros. A diferença que será excluída as etapas de criação de arquivos e diretórios, ligação entre o repositório local e remoto, pois estas etapas em tese já devem ter sido realizadas para que ocorra uma atualização do repositório.
 
 1. Verificar o ```git status``` 
 A árvore de trabalho precisa ser verificada para sinalizar se há um arquivo que precisa ser reconhecido e commitado
@@ -129,12 +129,12 @@ Agora que os arquivos foram reconhecidos com suas devidas alterações, eles pod
 Como mensionado anteriormente, o git log irá exibir o hash, o autor, a data e o commit. Assim como o status, o log também é sempre bom ser verificado nos processos de realizar o envio (push) para o repositório.
 
 5. Fazer o ```git push```
-Finalmente chegamos no momento de realizar o ```git push```, agora todas as alterações são empurradas para o repositório.
+Finalmente chegamos no momento de realizar o ```git push origin main```, agora todas as alterações são empurradas para o repositório. Importante observar que ```main``` é o nome da branch. Normalmente, na atualidade, no processo de criação de repositórios é colocado como main, mas ainda há usuários que utilizam ```master```. O nome da branch tem que está de acordo com a branch do projeto remoto.
 
 ### Puchando alterações do repositório remoto
-No terminal do diretório desejado basta digitar ```git pull``` para colocar todas as alterações no repositório local.
+Imagine que um colaborador do projeto fez algumas alterações nos arquivos do repositório, então o que você possui na sua máquina está desatualizado, pois seu projeto está com o versionamento anterior. É necessário que você atualize seu repositório local, para que assim você possa fazer novas alterações na versão mais recente do projeto. No terminal do diretório desejado basta digitar ```git pull origin main``` para colocar todas as alterações no repositório local. Fique atento ao nome da branch utilizada no repositório.
 
-### Realizar alterações no repositório
+### Realizando alterações
 
 - Remover versionamento
 Caso o git init foi feito na pasta errada, poderá ser utilizado o ````rm -rf .git```. Isso irá remover .git da pasta.
@@ -176,7 +176,7 @@ Para utilizá-lo basta fazer o mesmo do soft, colocando o hash do commit após o
 Nesse caso ele vai além do staged e unstaged, descartando totalmente o(s) arquivo(s) do commit indicado. Ele segue o mesmo processo de utilização instruído anteriormente. 
 
 
-## Referências
+# Referências
 
 - [Digital Innovation One - DIO.me](https://web.dio.me/track/coding-future-banco-pan-desenvolvimento-frontend-com-angular?tab=path)
 - [Trybe](https://blog.betrybe.com/git/git-push/)
