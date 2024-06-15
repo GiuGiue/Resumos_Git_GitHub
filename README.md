@@ -115,20 +115,20 @@ Acrescente o link do repositório desejado após o comando. Este é um link fct�
 ## Subindo atualizações dos arquivos
 É possível observar que esse processo é muito semelhante aos outros. A diferença que será excluída as etapas de criação de arquivos e diretórios, ligação entre o repositório local e remoto, pois estas etapas em tese já devem ter sido realizadas para que ocorra uma atualização do repositório.
 
-1. Verificar o ```git status``` 
+1. Verificar o ```git status```:
 A árvore de trabalho precisa ser verificada para sinalizar se há um arquivo que precisa ser reconhecido e commitado
 
-2. Fazer o ```git add``` do arquivo
+2. Fazer o ```git add``` do arquivo:
 Caso algum não seja reconhecido na ávore de trabalho, o nome dos arquivos aparecerão em vermelho. Por isso é necessário utilizar o ```git add ``` com o nome do arquivo. 
 Ou se deseja adicionar todos os arquivos do diretório é só utilizar o ```git add . ```
 
-3. Realizando o ```commit```
+3. Realizando o ```commit```:
 Agora que os arquivos foram reconhecidos com suas devidas alterações, eles poderão ser comitados. Para isto basta inserir ```git commit -m "comentario importante sobre o que foi commitado"```. Isso ajudará quando for preciso revisar o histórico de alterações, então utilize uma linguagem simples, direta e **bem resumida**.
 
-4. Verificar o ```git log```
+4. Verificar o ```git log```:
 Como mensionado anteriormente, o git log irá exibir o hash, o autor, a data e o commit. Assim como o status, o log também é sempre bom ser verificado nos processos de realizar o envio (push) para o repositório.
 
-5. Fazer o ```git push```
+5. Fazer o ```git push```:
 Finalmente chegamos no momento de realizar o ```git push origin main```, agora todas as alterações são empurradas para o repositório. Importante observar que ```main``` é o nome da branch. Normalmente, na atualidade, no processo de criação de repositórios é colocado como main, mas ainda há usuários que utilizam ```master```. O nome da branch tem que está de acordo com a branch do projeto remoto.
 
 ### Puchando alterações do repositório remoto
