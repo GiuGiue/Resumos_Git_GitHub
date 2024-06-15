@@ -88,7 +88,7 @@ git log
 ```
 Se o status for verificado novamente mostrará que a árvore de trabalho está limpa. Lembrando que o status da pasta não é reconhecido se estiver vazio, assim será mostrado que não há nada na árvore de trabalho.
 
-## Subir repositório local pronto para o repositório remoto
+### Subir repositório local pronto para o repositório remoto
 
 1. Adicionando a URL do repositório remoto
 ```
@@ -112,7 +112,7 @@ git clone https://github.com/GiuGiue/test.git
 ```
 Acrescente o link do repositório desejado após o comando. Este é um link fctício, substitua pelo link de um repositório existente. 
 
-## Empurrando atualizações dos arquivos para o repositório
+### Empurrando atualizações dos arquivos para o repositório
 É possível observar que esse processo é muito semelhante aos outros. A diferença que será excluída as etapas de criação de arquivos e diretórios, ligação entre o repositório local e remoto, pois estas etapas em tese já devem ter sido realizadas para que ocorra uma atualização do repositório.
 
 1. Verificar o ```git status```:
@@ -131,7 +131,7 @@ Como mensionado anteriormente, o git log irá exibir o hash, o autor, a data e o
 5. Fazer o ```git push```:
 Finalmente chegamos no momento de realizar o ```git push origin main```, agora todas as alterações são empurradas para o repositório. Importante observar que ```main``` é o nome da branch. Normalmente, na atualidade, no processo de criação de repositórios é colocado como main, mas ainda há usuários que utilizam ```master```. O nome da branch tem que está de acordo com a branch do projeto remoto.
 
-### Puchando alterações do repositório remoto
+### Puxando alterações do repositório remoto
 Imagine que um colaborador do projeto fez algumas alterações nos arquivos do repositório, então o que você possui na sua máquina está desatualizado, pois seu projeto está com o versionamento anterior. É necessário que você atualize seu repositório local, para que assim você possa fazer novas alterações na versão mais recente do projeto. No terminal do diretório desejado basta digitar ```git pull origin main``` para colocar todas as alterações no repositório local. Fique atento ao nome da branch utilizada no repositório.
 
 ### Realizando alterações
@@ -176,7 +176,7 @@ Para utilizá-lo basta fazer o mesmo do soft, colocando o hash do commit após o
 Nesse caso ele vai além do staged e unstaged, descartando totalmente o(s) arquivo(s) do commit indicado. Ele segue o mesmo processo de utilização instruído anteriormente. 
 
 
-# Referências
+## Referências
 
 - [Digital Innovation One - DIO.me](https://web.dio.me/track/coding-future-banco-pan-desenvolvimento-frontend-com-angular?tab=path)
 - [Trybe](https://blog.betrybe.com/git/git-push/)
