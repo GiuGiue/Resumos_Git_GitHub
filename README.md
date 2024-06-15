@@ -1,21 +1,46 @@
 # Resumos Git e GitHub
 
-Construi esse repositório com a finalidade de armazenar resumos realcionados ao versionamento de código com Git e GitHub, servindo como material de apoio para revisão.
+Construi esse README com a finalidade de armazenar resumos realcionados ao versionamento de código com Git e GitHub, servindo como material de apoio para revisão.
 
 ## Documentações
 - [Documentação Git](https://git-scm.com/docs/git/pt_BR)
 - [Documentação GitHub](https://docs.github.com/pt)
 
-## Comandos Git Bash
-- **Comandos importantes para manipular diretórios**
+### Como configurar o Git Bash
 
-|Voltar para a pasta anterior|Criar diretório (pasta)|Ignorar diretório|Entrar no diretório|Mostrar status|
-|-----------|-----------|------------|------------|---------|
-|```cd ..```|```mkdir Nome_Do_Diretório```|```touch .gitignore```|```cd Nome_Do_Diretório```|```git status```|
+Para baixar o git no Windows basta ir no site do [Git for Windows](https://gitforwindows.org), que é de um projeto de uma comunidade que visa facilitar o processo de instalação do Git para o usuário do Windows, encontrar e reparar bugs na versão do Git do Windows. Baixando por esse site o processo de instalação basta clicar em "Next". Obviamente também pode ser baixado no próprio site do [Git](https://www.git-scm.com/downloads), onde possui também opções para outros sistemas operacionais e com os devidos passos a passos. Se optar por instalar pelo site oficial do Git fique atento no processo de instalação ao marcar as opções, esse [vídeo](https://www.youtube.com/watch?v=mmcOw2ynWEs) ensina bem sobre isso.
+O Git deve ser configurado para que tudo funcione perfeitamente. Deve ser criado uma pasta, e dentro da pasta ao clicar com o botão direito irá aparecer a opção "Open the Git Bash Here" e a selecione. Irá abrir o terminal do Git Bash com o caminho do diretório que você abriu. Segue os comandos:
 
-- Mostrar status
+1. Primeiro verifique se está tudo certo com a versão do Git: ```git version``` Se apareceu o número da versão e não apareceu nenhuma mensagem de erro é porque está tudo OK!
+2. Coloque o mesmo nome que você registrou no GitHub dentro das aspas após o comando: ```git config --global user.name "SeuNomeDeUsuarioDoGithub"```
+3. Coloque o mesmo e-mail que foi registrado na sua conta do GitHub dentro das aspas após o comando:```git config --global user.email "seuemail.dogithub@gmail.com"```
+4. Vefique se seu email e nome registrado está dentro da lista de configuração:```git config --list``` Se apareceu é porque está tudo OK!
+
+## Comandos básicos para manipular diretórios pelo cmd
+
+|Voltar para a pasta anterior|Criar diretório (pasta)|Entrar no diretório|
+|-----------|-----------|------------|
+|```cd ..```|```mkdir Nome_Do_Diretório```|```cd Nome_Do_Diretório```|
+
+- Voltar para a pasta anterior: ```cd ..```
+Se você quer entrar na pasta anterior do caminho do diretório basta utilizar este comando.
+- Criar diretório (pasta): ```mkdir```
+Para fazer uma pasta pelo terminal basta digitar o comando e o nome que você deseja dar ao diretório.
+- Entrar no diretório: ```cd```
+Nota-se que tudo que envolve em entrar em diretórios é usado anteriormente o comando ```cd```. É importante colocar o caminho logo em seguida.
+
+*Por que é importante saber esses comandos?*
+Para criar repositórios, e na realização de suas atualizações, é muito importante ficar atento em qual diretório você está, se não pode ocorrer alguns problemas.
+
+## Comandos do git importantes para diretórios
+
+|Mostrar status|Ignorar diretório|
+|-----------|-----------|
+|```git status```|```touch .gitignore```|
+
+- Mostrar status: ```git status```
 Esse comando pode ser utilizado para verificar o status do commit na pasta, da árvore de trabalho e área de preparação. A área de preparação (ou index) é onde será preparado os arquivos que serão salvos em um commit. 
-- Ignorar diretório
+- Ignorar diretório: ```touch .gitignore```
 Esse comando irá criar um arquivo .gitignore, por isso é importante está dentro do diretório desejado. O diretório será ignorado e não será passado para o repositório.
 
 ### Criando um repositório local
