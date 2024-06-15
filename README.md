@@ -112,7 +112,7 @@ git clone https://github.com/GiuGiue/test.git
 ```
 Acrescente o link do repositório desejado após o comando. Este é um link fctício, substitua pelo link de um repositório existente. 
 
-## Subindo atualizações dos arquivos
+## Empurrando atualizações dos arquivos para o repositório
 É possível observar que esse processo é muito semelhante aos outros. A diferença que será excluída as etapas de criação de arquivos e diretórios, ligação entre o repositório local e remoto, pois estas etapas em tese já devem ter sido realizadas para que ocorra uma atualização do repositório.
 
 1. Verificar o ```git status```:
