@@ -8,13 +8,18 @@ Construi esse README com a finalidade de armazenar resumos realcionados ao versi
 
 ### Como configurar o Git Bash
 
-Para baixar o git no Windows basta ir no site do [Git for Windows](https://gitforwindows.org), que é de um projeto de uma comunidade que visa facilitar o processo de instalação do Git para o usuário do Windows, encontrar e reparar bugs na versão do Git do Windows. Baixando por esse site o processo de instalação basta clicar em "Next". Obviamente também pode ser baixado no próprio site do [Git](https://www.git-scm.com/downloads), onde possui também opções para outros sistemas operacionais e com os devidos passos a passos. Se optar por instalar pelo site oficial do Git fique atento no processo de instalação ao marcar as opções, esse [vídeo](https://www.youtube.com/watch?v=mmcOw2ynWEs) ensina bem sobre isso.
+Para baixar o git no Windows basta ir no site [Git for Windows](https://gitforwindows.org), que é um projeto de uma comunidade que visa facilitar o processo de instalação do Git para os usuários do Windows, encontrar e reparar bugs na versão do Git do Windows. Baixando por esse site, no processo de instalação basta clicar em "Next" em todas as etapas.
+
+Obviamente também pode ser baixado no próprio site do [Git](https://www.git-scm.com/downloads), onde possui opções para outros sistemas operacionais e com os devidos passos a passos. Se optar por instalar pelo site oficial do Git, fique atento no processo de instalação ao marcar as opções, esse [Vídeo](https://www.youtube.com/watch?v=mmcOw2ynWEs) ensina bem o processo.
+
 O Git deve ser configurado para que tudo funcione perfeitamente. Deve ser criado uma pasta, e dentro da pasta ao clicar com o botão direito irá aparecer a opção "Open the Git Bash Here" e a selecione. Irá abrir o terminal do Git Bash com o caminho do diretório que você abriu. Segue os comandos:
 
 1. Primeiro verifique se está tudo certo com a versão do Git: ```git version``` Se apareceu o número da versão e não apareceu nenhuma mensagem de erro é porque está tudo OK!
 2. Coloque o mesmo nome que você registrou no GitHub dentro das aspas após o comando: ```git config --global user.name "SeuNomeDeUsuarioDoGithub"```
 3. Coloque o mesmo e-mail que foi registrado na sua conta do GitHub dentro das aspas após o comando:```git config --global user.email "seuemail.dogithub@gmail.com"```
 4. Vefique se seu email e nome registrado está dentro da lista de configuração:```git config --list``` Se apareceu é porque está tudo OK!
+
+PRONTO! Agora seu Git Bash está ligado a sua conta do GitHub!
 
 ## Comandos básicos para manipular diretórios pelo cmd
 
